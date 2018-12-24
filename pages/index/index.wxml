@@ -1,0 +1,25 @@
+<!--index.wxml-->
+<i-message id="message" />
+<view class="container">
+  <view class='list'>
+    <view class="item_block" data-cid="{{item.id}}" bindtap="onItemClick" wx:for="{{contentList}}" wx:key="{{item.id}}">
+      <view class="item_header">{{item.readed||10}}人阅读</view>
+      <view class="item_center">
+        <view class='content'>
+          <view class='title'>{{item.title}}</view>
+          <text class='des'>{{item.description}}</text>
+        </view>
+
+        <image class="item_img " mode='aspectFill' src="{{item.cover.path||('https://img.xjh.me/random_img.php?type=bg&return=302&timestamp='+item.id)}}"></image>
+      </view>
+      <view class='item_footer'>
+        <text class='group'>{{item.category_value?item.category_value.name:'Android'}}</text>
+      </view>
+
+    </view>
+
+  </view>
+  <i-spin size="large" fix wx:if="{{!(contentList&&contentList.length)}}"></i-spin>
+  <i-load-more wx:if="{{contentList&&contentList.length}}" i-class="load-more" loading="{{loading}}" />
+
+</view>

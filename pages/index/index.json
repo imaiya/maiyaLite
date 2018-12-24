@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "i-load-more": "../../dist/load-more/index",
+    "i-message": "../../dist/message/index",
+    "i-spin": "../../dist/spin/index"
+  },
+  "enablePullDownRefresh": true,
+  "backgroundTextStyle": "dark",
+  "backgroundColor": "#e9eaec"
+}

@@ -1,0 +1,15 @@
+{
+  "usingComponents": {
+    "i-cell-group": "../../dist/cell-group/index",
+    "i-cell": "../../dist/cell/index",
+    "i-panel": "../../dist/panel/index",
+    "i-icon": "../../dist/icon/index",
+    "i-switch": "../../dist/switch/index",
+    "i-button": "../../dist/button/index",
+    "i-message": "../../dist/message/index",
+    "multiFormid": "../../components/multiFormId/multiFormid"
+  },
+  "enablePullDownRefresh": false,
+  "backgroundTextStyle": "dark",
+  "backgroundColor": "#e9eaec"
+}

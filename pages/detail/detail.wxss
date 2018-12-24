@@ -1,0 +1,52 @@
+/* pages/detail.wxss */
+
+.wemark {
+  width: 90%;
+  margin: auto;
+}
+
+.container .title {
+  margin: 20px 20px 20px 10px;
+  color: #1c2438;
+  font-weight: bold;
+  font-size: 18px;
+  /* 最多两行 */
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.container .sub {
+  margin: 0px 20px;
+  align-self: flex-start;
+}
+
+.container .sub .author {
+  color: #1c2438;
+  font-size: 10px;
+}
+
+.container .sub .time {
+  color: #80848f;
+  font-size: 10px;
+}
+
+.container .img {
+  margin-top: 10px;
+  width: 750rpx;
+}
+
+
+
+.spin-article{
+    width: 100%;
+    height: 200px;
+    padding: 10px;
+    position: relative;
+    border: 1px solid #eee;
+    text-align: center;
+    box-sizing: border-box;
+}

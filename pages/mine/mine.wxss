@@ -1,0 +1,27 @@
+.avatar {
+  margin-top: 20px;
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 100rpx;
+}
+
+.nick_name {
+  margin-top: 20px;
+  color: #1c2438;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.cell-panel-demo {
+  display: block;
+  margin-top: 15px;
+}
+
+.list_cell {
+  width: 100%;
+}
+
+.btn_authorize {
+  margin-top: 20px !important;
+  display: block !important;
+}

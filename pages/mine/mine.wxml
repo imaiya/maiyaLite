@@ -1,0 +1,23 @@
+<!--mine.wxml-->
+<i-message id="message" />
+<view class="container">
+  <image class='avatar' src="{{avatar}}" />
+  <view class='nick_name'>{{nickname}}</view>
+  <view class='list_cell'>
+    <i-panel class="cell-panel-demo">
+      <i-cell title="关于麦芽Lite小程序" is-link url="/pages/detail/detail?id=5c1cb61d097b2931396f9974"></i-cell>
+    </i-panel>
+    <i-panel class="cell-panel-demo" title="有更新时将通过模板消息通知你">
+      <i-cell title="订阅">
+        <i-switch value="{{ subscibe }}" bind:change="onChange" slot="footer">
+          <i-icon type="right" slot="open"></i-icon>
+          <i-icon type="close" slot="close"></i-icon>
+        </i-switch>
+      </i-cell>
+    </i-panel>
+
+    <multiFormid bind:accessFormid="onFormidAccess">
+      <i-button i-class="btn_authorize" style="dispaly:block" wx:if="{{show_authorize}}" open-type="getUserInfo" bindgetuserinfo="userInfoHandler" type="primary">请先授权</i-button>
+    </multiFormid>
+  </view>
+</view>

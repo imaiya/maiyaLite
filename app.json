@@ -1,0 +1,39 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/mine/mine",
+    "pages/detail/detail"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "麦芽Lite",
+    "navigationBarTextStyle": "black"
+  },
+  "plugins": {
+    "sdkPlugin": {
+      "version": "1.13.0",
+      "provider": "wxc6b86e382a1e3294"
+    }
+  },
+  "tabBar": {
+    "selectedColor": "#52A9FF",
+    "color": "#bfbfbf",
+    "backgroundColor": "#fff",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "原创",
+        "iconPath": "img/index_un.png",
+        "selectedIconPath": "img/index_in.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "img/mine_un.png",
+        "selectedIconPath": "img/mine_in.png"
+      }
+    ]
+  }
+}

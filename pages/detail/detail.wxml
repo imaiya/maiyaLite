@@ -1,0 +1,16 @@
+<view class="container">
+  <view class='title'>{{content.title}}</view>
+  <view class='sub'>
+    <text class='author'> 麦芽</text>
+    <text class='time'>  ·{{dateStrt}}</text>
+  </view>
+  <view>
+    <image class='img' mode='aspectFill' src="{{content.cover.path||('https://img.xjh.me/random_img.php?type=bg&return=302&timestamp='+content.id)}}" />
+  </view>
+  <view class="wemark">
+    <wemark md="{{content.md_content}}" highlight type="wemark"></wemark>
+  </view>
+
+  <i-spin size="large" fix wx:if="{{showLoading}}"></i-spin>
+  <!-- </view> -->
+</view>

@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "wemark": "../../wemark/wemark",
+    "i-spin": "../../dist/spin/index"
+  }
+}
