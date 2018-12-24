@@ -11,7 +11,6 @@ Android/Web前端工程师,"麦芽"是工作中的花名
 ## thx ##
 - 设计师 ``` 肖旋``` 设计logo
 - markdown解析:[[wemark](https://github.com/TooBug/wemark)
-](https://github.com/TooBug/wemark)
 
 ## 联系我 ##
 - 简 书:[uncochen](http://www.jianshu.com/users/1695117cc969)
