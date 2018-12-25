@@ -2,7 +2,10 @@
   "pages": [
     "pages/index/index",
     "pages/mine/mine",
-    "pages/detail/detail"
+    "pages/detail/detail",
+    "pages/doc/doc",
+    "pages/doclist/doclist",
+    "pages/api/api"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -27,6 +30,12 @@
         "text": "原创",
         "iconPath": "img/index_un.png",
         "selectedIconPath": "img/index_in.png"
+      },
+      {
+        "pagePath": "pages/api/api",
+        "text": "查API",
+        "iconPath": "img/doc_un.png",
+        "selectedIconPath": "img/doc_in.png"
       },
       {
         "pagePath": "pages/mine/mine",

@@ -1,0 +1,6 @@
+/* pages/doc/doc.wxss */
+
+.wemark {
+  width: 90%;
+  margin: auto;
+}

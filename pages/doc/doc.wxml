@@ -1,0 +1,5 @@
+<!--pages/doc/doc.wxml-->
+<view class="wemark">
+  <wemark md="{{md_content}}" highlight type="wemark"></wemark>
+</view>
+<i-spin size="large" fix wx:if="{{showLoading}}"></i-spin>

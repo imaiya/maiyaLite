@@ -1,0 +1,15 @@
+<!--pages/api/api.wxml-->
+<view class='list'>
+  <view class="item_block" data-curl="{{item.res_url}}" data-cname="{{item.name}}" bindtap="onItemClick" wx:for="{{docList}}" wx:key="{{item.id}}">
+    <view class="item_header">推荐</view>
+    <view class="item_center">
+      <view class='content'>
+        <view class='title'>{{item.name}}</view>
+        <text class='des'>{{item.des}}</text>
+      </view>
+
+      <image class="item_img " mode='aspectFill' src="{{item.cover.path||('https://img.xjh.me/random_img.php?type=bg&return=302&timestamp='+item.id)}}"></image>
+    </view>
+
+  </view>
+</view>
