@@ -19,25 +19,24 @@ Page({
       title: options.name.replace('.md', '')
     })
     this.data.name = options.name.replace('.md', '')
-    wx.BaaS.request({
-      url: options.download_url,
-      data: {
-        access_token: 'a83282f90e3f99082518be4ab5392cb2f6f989bd'
-      },
-      method: 'GET'
-    }).then(res => {
-      console.log(res)
-      var md = res.data.replace(new RegExp('\\]\\(', 'g'), '](' + options.download_url.replace(options.name, ''))
-      this.setData({
-        md_content: md
+    //云函数转发调用
+    wx.BaaS
+      .invokeFunction('githubTranspond', {
+        url: options.download_url
       })
-      var that = this
-      setTimeout(function() {
-        that.setData({
-          showLoading: false
+      .then(res => {
+        console.log(res)
+        var md = res.data.replace(new RegExp('\\]\\(', 'g'), '](' + options.download_url.replace(options.name, ''))
+        this.setData({
+          md_content: md
         })
-      }, 1000);
-    })
+        var that = this
+        setTimeout(function() {
+          that.setData({
+            showLoading: false
+          })
+        }, 1000);
+      })
   },
 
 })
