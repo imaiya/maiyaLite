@@ -1,8 +1,8 @@
 <!--pages/doclist/doclist.wxml-->
 <i-panel>
   <i-cell-group>
-    <i-cell wx:for="{{fileList}}" title="{{item.name}}" wx:key="{{item.name}}" value="{{item.type=='file'?'':'更多'}}" is-link url="{{item.type=='file'?('/pages/doc/doc?download_url='+item.download_url+'&name='+item.name):('/pages/doclist/doclist?url='+item.url+'&name='+item.name)}}">
-      <i-icon slot="icon" type="{{item.type=='file'?'document':'other'}}" size="20" color="#52A9FF" />
+    <i-cell wx:for="{{fileList}}" title="{{item.name}}" wx:key="{{item.name}}" value="{{item.type=='file'?'':'更多'}}" is-link url="{{item.type=='file'?('/pages/doc/doc?download_url='+item.download_url+'&name='+item.name):('/pages/doclist/doclist?name='+item.name+'&url='+item.url)}}">
+      <i-icon slot="icon" type="{{item.type=='file'?'document':'other'}}" size="{{item.type=='file'?20:20}}" color="#52A9FF" />
     </i-cell>
   </i-cell-group>
 </i-panel>

@@ -15,12 +15,6 @@ Page({
   noViewData: {
     offset: 0,
   },
-  //事件处理函数
-  bindViewTap: function() {
-    wx.navigateTo({
-      url: '../logs/logs'
-    })
-  },
   //下拉刷新
   onPullDownRefresh: function() {
     this.data.contentList.length = 0

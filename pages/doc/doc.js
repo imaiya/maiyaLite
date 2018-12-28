@@ -7,10 +7,14 @@ Page({
     name: ''
   },
 
+  noUIData: {
+    download_url: ''
+  },
+
   onShareAppMessage(res) {
     return {
-      title: 'API文档查询',
-      path: 'pages/api/api'
+      title: 'API文档查询:' + this.data.name,
+      path: 'pages/doc/doc?download_url=' + this.noUIData.download_url + '&name=' + this.data.name
     }
   },
 

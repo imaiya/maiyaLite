@@ -12,6 +12,7 @@ Page({
     wx.setNavigationBarTitle({
       title: options.name
     })
+    console.log(options)
     //云函数转发调用
     wx.BaaS
       .invokeFunction('githubTranspond', {
