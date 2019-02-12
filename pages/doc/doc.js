@@ -30,7 +30,10 @@ Page({
       })
       .then(res => {
         console.log(res)
-        var md = res.data.replace(new RegExp('\\]\\(', 'g'), '](' + options.download_url.replace(options.name, ''))
+        //有一些md文件包含前面的注释部分,以---开头,以---结尾,故需要先去掉该部分
+        var noMate = res.data.replace(new RegExp('^---[\\s\\S]*---'),'')
+        //由于github的md文档中图片路径都是相对路径,这里需要转化为绝对路劲
+        var md = noMate.replace(new RegExp('\\]\\(', 'g'), '](' + options.download_url.replace(options.name, ''))
         this.setData({
           md_content: md
         })
